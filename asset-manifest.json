@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/your-repo-name/static/css/main.b47d9529.css",
-    "main.js": "/your-repo-name/static/js/main.741fa958.js",
-    "static/js/453.0b4b0abe.chunk.js": "/your-repo-name/static/js/453.0b4b0abe.chunk.js",
-    "index.html": "/your-repo-name/index.html",
-    "main.b47d9529.css.map": "/your-repo-name/static/css/main.b47d9529.css.map",
-    "main.741fa958.js.map": "/your-repo-name/static/js/main.741fa958.js.map",
-    "453.0b4b0abe.chunk.js.map": "/your-repo-name/static/js/453.0b4b0abe.chunk.js.map"
+    "main.css": "/WOW/static/css/main.b47d9529.css",
+    "main.js": "/WOW/static/js/main.7c006213.js",
+    "static/js/453.0b4b0abe.chunk.js": "/WOW/static/js/453.0b4b0abe.chunk.js",
+    "index.html": "/WOW/index.html",
+    "main.b47d9529.css.map": "/WOW/static/css/main.b47d9529.css.map",
+    "main.7c006213.js.map": "/WOW/static/js/main.7c006213.js.map",
+    "453.0b4b0abe.chunk.js.map": "/WOW/static/js/453.0b4b0abe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b47d9529.css",
-    "static/js/main.741fa958.js"
+    "static/js/main.7c006213.js"
   ]
 }
