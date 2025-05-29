@@ -1,0 +1,298 @@
+@import url('https://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    font-family: 'kopubdotum', 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+.main {
+    width: 85vw;
+    height: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5vw;
+    margin-bottom: -3vw;
+}
+
+.contentP {
+    line-height: 2.2vw;
+    margin-bottom: 3vw;
+    font-size: 1.2vw;
+}
+
+.titleP {
+    font-size: 7.5vw;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #FFEF5F 0%, #FFEF5F 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: left bottom;
+    transition: background-size 0.4s ease;
+    cursor: pointer;
+}
+
+.titleP:hover {
+    background-size: 100% 100%;
+}
+
+
+.sub-titleP {
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+.circle {
+    width: 1vw;
+    height: 1vw;
+    background-color: #000;
+    border-radius: 50%;
+    margin-bottom: 5vw;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5vw;
+}
+
+.gridItem {
+    grid-column: span 1;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    padding: 2vw;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition: ease 0.3s;
+    filter: blur(3px);
+    margin: 4vw 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle farthest-side at 40% 30%, #ffffff, #FFEF5F);
+
+}
+
+
+.gridItem:hover {
+    filter: blur(3px);
+    transform: translateY(-30px);
+    /* 위로 떠오르는 효과 */
+}
+
+
+.hidden-word {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.gridItem:hover .hidden-word {
+    opacity: 1;
+    filter: none !important;
+}
+
+/* 단어 변경 애니메이션 */
+@keyframes wordChange {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.word-changing {
+    animation: wordChange 0.4s ease forwards;
+}
+
+
+
+.cards-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: space-between;
+    margin: 3vw 0 6vw 0;
+}
+
+.keywordList {
+    display: flex;
+    align-items: center;
+}
+
+.keyword {
+    padding: 0.5vw 1.2vw;
+    border-radius: 100px;
+    text-align: center;
+    background-color: #FFEF5F;
+    border: solid 0.1vw #000;
+    font-size: 1vw;
+    font-weight: 500;
+    width: 4.5vw;
+}
+
+.keywordText {
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.movie-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: space-between;
+    margin: 3vw 0 6vw 0;
+}
+
+.book-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: space-between;
+    margin: 3vw 0 6vw 0;
+}
+
+.quote-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: space-between;
+    margin: 3vw 0 6vw 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5vw;
+    height: 20vw;
+    width: 60vw;
+    transition: transform 0.6s ease;
+}
+
+.grid-box {
+    background-color: #f5f5f5;
+    border: 1px solid #000;
+}
+
+.grid1 {
+    border-radius: 0 10vw 0 0;
+    animation: rotate-90-hold 6s infinite;
+    animation-delay: 0s;
+    transform-origin: center center;
+}
+
+.grid2 {
+    border-radius: 10vw 0 0 0;
+    animation: rotate90-hold 6s infinite;
+    animation-delay: 0.2s;
+    transform-origin: center center;
+}
+
+.grid3 {
+    border-radius: 10vw 0 0 0;
+}
+
+.grid4 {
+    border-radius: 0 10vw 0 0;
+}
+
+.grid5 {
+    border-radius: 0 10vw 0 0;
+    animation: rotate-90-hold 6s infinite;
+    animation-delay: 0.4s;
+}
+
+.grid6 {
+    border-radius: 10vw 0 0 0;
+    animation: rotate90-hold 6s infinite;
+    animation-delay: 0.6s;
+}
+
+.grid7 {
+    border-radius: 0 0 10vw 0;
+    animation: rotate90-hold 6s infinite;
+    animation-delay: 0.8s;
+    transform-origin: center center;
+}
+
+.grid8 {
+    border-radius: 0 0 10vw 0;
+}
+
+.grid9 {
+    border-radius: 0 0 0 10vw;
+}
+
+.grid10 {
+    border-radius: 0 0 10vw 0;
+}
+
+.grid11 {
+    border-radius: 0 0 10vw 0;
+    animation: rotate90-hold 6s infinite;
+    animation-delay: 1s;
+}
+
+.grid12 {
+    border-radius: 0 0 10vw 0;
+}
+
+        @keyframes rotate90-hold {
+            0% {
+                transform: rotate(0deg);
+            }
+            33% {
+                transform: rotate(90deg);
+            }
+            67% {
+                transform: rotate(90deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes rotate-90-hold {
+            0% {
+                transform: rotate(0deg);
+            }
+            33% {
+                transform: rotate(-90deg);
+            }
+            67% {
+                transform: rotate(-90deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes rotate-180-hold {
+            0% {
+                transform: rotate(0deg);
+            }
+            33% {
+                transform: rotate(-180deg);
+            }
+            67% {
+                transform: rotate(-180deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
