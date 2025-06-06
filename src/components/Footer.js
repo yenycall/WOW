@@ -28,7 +28,7 @@ const styles = {
         fontWeight: '500',
         lineHeight: '1vw',
         display: 'flex',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     link: {
         color: '#000',

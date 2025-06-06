@@ -8,7 +8,7 @@ const Playlist = () => {
         <div className="main-container">
             <div className="keywordList">
                 <div className="keyword">Keyword</div>
-                <div className="keywordText">LOVE</div>
+                <div className="keywordText">Love</div>
             </div>
 
             <div className="cards-grid">
@@ -19,14 +19,14 @@ const Playlist = () => {
                         imageUrl={playlist.imageUrl}
                         title={playlist.title}
                         name={playlist.name}
-                        onClick={() => console.log(`플레이리스트 ${playlist.id} 선택됨`)}
+                        type="music"
                     />
                 ))}
             </div>
 
             <div className="keywordList">
                 <div className="keyword">Keyword</div>
-                <div className="keywordText">SUMMER</div>
+                <div className="keywordText">Summer</div>
             </div>
 
             <div className="cards-grid">
@@ -37,7 +37,7 @@ const Playlist = () => {
                         imageUrl={popularPlaylist.imageUrl}
                         title={popularPlaylist.title}
                         name={popularPlaylist.name}
-                        onClick={() => console.log(`플레이리스트 ${popularPlaylist.id} 선택됨`)}
+                        type="music"
                     />
                 ))}
             </div>

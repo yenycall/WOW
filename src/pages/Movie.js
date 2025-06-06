@@ -8,15 +8,15 @@ const Movie = () => {
         <div className="main-container">
             <div className="movie-grid-container">
                 <div className="keywordList">
-                    <div className="keyword">Lines</div>
-                    <div className="keywordText">THEATER</div>
+                    <div className="keyword">Line</div>
+                    <div className="keywordText">Theater</div>
                 </div>
                 
                 <div className="movie-grid">
                     {movieData.map(movie => (
                         <MovieCard
                             key={movie.id}
-                            id={movie.id} // ID 추가
+                            id={movie.id}
                             images={movie.images}
                             title={movie.title}
                             releaseYear={movie.releaseYear}

@@ -4,32 +4,25 @@ import '../styles/LikeButton.css';
 const LikeButton = ({ id, quoteData }) => {
   const [isLiked, setIsLiked] = useState(false);
   
-  // 컴포넌트 마운트 시 로컬 스토리지에서 좋아요 상태 확인
   useEffect(() => {
     const likedQuotes = JSON.parse(localStorage.getItem('likedQuotes')) || [];
     setIsLiked(likedQuotes.includes(id));
   }, [id]);
 
-  // 좋아요 토글 함수
   const toggleLike = () => {
     const likedQuotes = JSON.parse(localStorage.getItem('likedQuotes')) || [];
     
     let updatedLikes;
     if (isLiked) {
-      // 좋아요 취소
       updatedLikes = likedQuotes.filter(quoteId => quoteId !== id);
     } else {
-      // 좋아요 추가
       updatedLikes = [...likedQuotes, id];
     }
     
-    // 로컬 스토리지 업데이트
     localStorage.setItem('likedQuotes', JSON.stringify(updatedLikes));
     
-    // 상태 업데이트
     setIsLiked(!isLiked);
-    
-    // 커스텀 이벤트 발생하여 MyArchive 페이지에 알림
+
     window.dispatchEvent(new CustomEvent('likedQuotesUpdated', { 
       detail: { id, isLiked: !isLiked, quoteData } 
     }));

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Navigation.css'; // CSS 파일 import
+import '../styles/Navigation.css'; 
 
 const MetaballLogo = () => {
   return (

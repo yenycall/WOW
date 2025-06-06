@@ -9,7 +9,7 @@ const Book = () => {
             <div className="book-grid-container">
                 <div className="keywordList">
                     <div className="keyword">Sentence</div>
-                    <div className="keywordText">BOOK SHELF</div>
+                    <div className="keywordText">Book Shelf</div>
                 </div>
 
                 <div className="book-grid">
@@ -20,7 +20,6 @@ const Book = () => {
                             imageUrl={book.imageUrl}
                             title={book.title}
                             name={book.name}
-                            onClick={() => console.log(`플레이리스트 ${book.id} 선택됨`)}
                         />
                     ))}
                 </div>

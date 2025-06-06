@@ -29,7 +29,6 @@
     color: #333;
   }
   
-  /* 애니메이션 효과 */
   .like-button svg {
     transition: all 0.3s ease;
   }

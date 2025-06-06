@@ -1,0 +1,71 @@
+.quote-modal-content {
+    width: 28vw;
+    height: 28vw;
+}
+
+.modal-content.quote-modal-content .quote-info{
+    text-align: left;
+    margin: 0;
+}
+
+.modal-content.quote-modal-content .quote-name {
+    font-size: 1vw;
+    color: #000;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.modal-content.quote-modal-content .quote-birth {
+    margin: 1vw 0;
+    font-size: 0.8vw;
+    color: #000;
+    white-space: pre-line;
+    line-height: 1.3vw;
+}
+
+.modal-content.quote-modal-content .quote-idea {
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0.3vw;
+    white-space: pre-line; 
+}
+
+.modal-content.quote-modal-content .quote-quote{
+    white-space: pre-line;
+    font-size: 0.85vw;
+    line-height: 1.3vw;
+    color: #FFEF5F;
+    font-weight: 600;
+    font-style: italic;
+    padding: 0.8vw 0.5vw;
+    text-align: center;
+    margin-top: 2.5vw;
+    margin-bottom: 0;
+    position: relative;
+    width: 24.6vw;
+    height: 15vw;
+}
+
+.quote-quote.background {
+    background-image: var(--bg-image);
+    background-size: 24.6vw 15vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.quote-quote.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: -1;
+}

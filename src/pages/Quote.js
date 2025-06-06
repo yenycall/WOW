@@ -9,7 +9,7 @@ const Quote = () => {
             <div className="quote-grid-container">
                 <div className="keywordList">
                     <div className="keyword">Wisdom</div>
-                    <div className="keywordText">PHILOSOPHY</div>
+                    <div className="keywordText">Philosophy</div>
                 </div>
                 
                 <div className="quote-grid">
@@ -21,6 +21,7 @@ const Quote = () => {
                             name={quote.name}
                             birth={quote.birth}
                             quote={quote.quote}
+                            type="quote"
                         />
                     ))}
                 </div>

@@ -67,6 +67,7 @@ const Main = () => {
         <div className="main-container">
             <main>
                 <div className="main">
+                    
                     <p className='titleP' ref={titleRef}>World Of {currentWord}</p>
                 </div>
 
@@ -80,19 +81,31 @@ const Main = () => {
                 </p>
             </main>
 
-            <div class="grid-container">
-                <div class="grid-box grid1"></div>
-                <div class="grid-box grid2"></div>
-                <div class="grid-box grid3"></div>
-                <div class="grid-box grid4"></div>
-                <div class="grid-box grid5"></div>
-                <div class="grid-box grid6"></div>
-                <div class="grid-box grid7"></div>
-                <div class="grid-box grid8"></div>
-                <div class="grid-box grid9"></div>
-                <div class="grid-box grid10"></div>
-                <div class="grid-box grid11"></div>
-                <div class="grid-box grid12"></div>
+            <div className="grid-container">
+                <div className="grid-box grid1"></div>
+                <div className="grid-box grid2"></div>
+                <div className="grid-box grid3"></div>
+                <div className="grid-box grid4"></div>
+                <div className="grid-box grid5"></div>
+                <div className="grid-box grid6"></div>
+                <div className="grid-box grid7"></div>
+                <div className="grid-box grid8"></div>
+                <div className="grid-box grid9"></div>
+                <div className="grid-box grid10"></div>
+                <div className="grid-box grid11"></div>
+                <div className="grid-box grid12"></div>
+                <div className="grid-box grid13"></div>
+                <div className="grid-box grid14"></div>
+                <div className="grid-box grid15"></div>
+                <div className="grid-box grid16"></div>
+                <div className="grid-box grid17"></div>
+                <div className="grid-box grid18"></div>
+                <div className="grid-box grid19"></div>
+                <div className="grid-box grid20"></div>
+                <div className="grid-box grid21"></div>
+                <div className="grid-box grid22"></div>
+                <div className="grid-box grid23"></div>
+                <div className="grid-box grid24"></div>
             </div>
         </div>
     );

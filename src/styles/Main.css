@@ -6,6 +6,11 @@ body {
     font-size: 16px;
 }
 
+body ::selection{
+    background-color: #ffef5fa8;
+    color: #000;
+}
+
 .main {
     width: 85vw;
     height: 25vw;
@@ -13,12 +18,16 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: -5vw;
-    margin-bottom: -3vw;
+    margin-bottom: -4vw;
+}
+
+.main img{
+    width: 10vw;
 }
 
 .contentP {
     line-height: 2.2vw;
-    margin-bottom: 3vw;
+    margin-bottom: 4.5vw;
     font-size: 1.2vw;
 }
 
@@ -97,7 +106,6 @@ body {
     filter: none !important;
 }
 
-/* 단어 변경 애니메이션 */
 @keyframes wordChange {
     0% {
         opacity: 0;
@@ -153,7 +161,7 @@ body {
     flex-wrap: wrap;
     gap: 1vw;
     justify-content: space-between;
-    margin: 3vw 0 6vw 0;
+    margin: 3vw 0 3vw 0;
 }
 
 .book-grid {
@@ -162,7 +170,7 @@ body {
     flex-wrap: wrap;
     gap: 1vw;
     justify-content: space-between;
-    margin: 3vw 0 6vw 0;
+    margin: 3vw 0 3vw 0;
 }
 
 .quote-grid {
@@ -171,128 +179,277 @@ body {
     flex-wrap: wrap;
     gap: 1vw;
     justify-content: space-between;
-    margin: 3vw 0 6vw 0;
+    margin: 3vw 0 3vw 0;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 0.5vw;
-    height: 20vw;
-    width: 60vw;
+    width: 85vw;
     transition: transform 0.6s ease;
+    margin-bottom: 3vw;
 }
 
 .grid-box {
     background-color: #f5f5f5;
     border: 1px solid #000;
+    width: 100%;
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
 }
 
 .grid1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
     border-radius: 0 10vw 0 0;
-    animation: rotate-90-hold 6s infinite;
-    animation-delay: 0s;
-    transform-origin: center center;
-}
-
-.grid2 {
-    border-radius: 10vw 0 0 0;
-    animation: rotate90-hold 6s infinite;
+    animation: flipX 8s infinite;
     animation-delay: 0.2s;
     transform-origin: center center;
 }
 
-.grid3 {
+.grid2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
     border-radius: 10vw 0 0 0;
+    animation: flipX 8s infinite;
+    animation-delay: 0.4s;
+    transform-origin: center center;
 }
 
-.grid4 {
-    border-radius: 0 10vw 0 0;
-}
-
-.grid5 {
-    border-radius: 0 10vw 0 0;
-    animation: rotate-90-hold 6s infinite;
+.grid3 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 10vw 0 0 0;
+    animation: color 8s infinite;
     animation-delay: 0.4s;
 }
 
-.grid6 {
-    border-radius: 10vw 0 0 0;
-    animation: rotate90-hold 6s infinite;
+.grid4 {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 0 10vw 0 0;
+    animation: color 8s infinite;
     animation-delay: 0.6s;
 }
 
-.grid7 {
-    border-radius: 0 0 10vw 0;
-    animation: rotate90-hold 6s infinite;
+.grid5 {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 0 10vw 0 0;
+    animation: flipX 8s infinite;
     animation-delay: 0.8s;
     transform-origin: center center;
 }
 
-.grid8 {
+.grid6 {
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 10vw 0 0 0;
+    animation: flipX 8s infinite;
+    animation-delay: 1.0s;
+    transform-origin: center center;
+}
+
+.grid7 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
     border-radius: 0 0 10vw 0;
+    animation: flipX 8s infinite;
+    animation-delay: 0.6s;
+    transform-origin: center center;
+}
+
+.grid8 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 0 0 10vw 0;
+    animation: color 8s infinite;
+    animation-delay: 0.2s;
 }
 
 .grid9 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
     border-radius: 0 0 0 10vw;
+    animation: color 8s infinite;
+    animation-delay: 0.8s;
 }
 
 .grid10 {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
     border-radius: 0 0 10vw 0;
+    animation: color 8s infinite;
+    animation-delay: 1.0s;
 }
 
 .grid11 {
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 1;
     border-radius: 0 0 10vw 0;
-    animation: rotate90-hold 6s infinite;
-    animation-delay: 1s;
+    animation: flipX 8s infinite;
+    animation-delay: 1.2s;
+    transform-origin: center center;
 }
 
 .grid12 {
+    grid-column: 6 / span 1;
+    grid-row: 2 / span 1;
     border-radius: 0 0 10vw 0;
+    animation: color 8s infinite;
+    animation-delay: 1.2s;
 }
 
-        @keyframes rotate90-hold {
-            0% {
-                transform: rotate(0deg);
-            }
-            33% {
-                transform: rotate(90deg);
-            }
-            67% {
-                transform: rotate(90deg);
-            }
-            100% {
-                transform: rotate(0deg);
-            }
-        }
+.grid13 {
+    grid-column: 7 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 10vw 0 0 0;
+    animation: flipX 8s infinite;
+    animation-delay: 0.2s;
+    transform-origin: center center;
+}
 
-        @keyframes rotate-90-hold {
-            0% {
-                transform: rotate(0deg);
-            }
-            33% {
-                transform: rotate(-90deg);
-            }
-            67% {
-                transform: rotate(-90deg);
-            }
-            100% {
-                transform: rotate(0deg);
-            }
-        }
+.grid14 {
+    grid-column: 8 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 0 10vw 0 0;
+    animation: flipX 8s infinite;
+    animation-delay: 0.4s;
+    transform-origin: center center;
+}
 
-        @keyframes rotate-180-hold {
-            0% {
-                transform: rotate(0deg);
-            }
-            33% {
-                transform: rotate(-180deg);
-            }
-            67% {
-                transform: rotate(-180deg);
-            }
-            100% {
-                transform: rotate(0deg);
-            }
-        }
+.grid15 {
+    grid-column: 9 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 10vw 0 0 0;
+    animation: color 8s infinite;
+    animation-delay: 0.4s;
+}
+
+.grid16 {
+    grid-column: 10 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 0 10vw 0 0;
+    animation: color 8s infinite;
+    animation-delay: 0.6s;
+}
+
+.grid17 {
+    grid-column: 11 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 10vw 0 0 0;
+    animation: flipX 8s infinite;
+    animation-delay: 0.8s;
+    transform-origin: center center;
+}
+
+.grid18 {
+    grid-column: 12 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 0 10vw 0 0;
+    animation: flipX 8s infinite;
+    animation-delay: 1.0s;
+    transform-origin: center center;
+}
+
+.grid19 {
+    grid-column: 7 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 0 0 0 10vw;
+    animation: flipX 8s infinite;
+    animation-delay: 0.6s;
+    transform-origin: center center;
+}
+
+.grid20 {
+    grid-column: 8 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 0 0 10vw 0;
+    animation: color 8s infinite;
+    animation-delay: 0.2s;
+}
+
+.grid21 {
+    grid-column: 9 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 0 0 0 10vw;
+    animation: color 8s infinite;
+    animation-delay: 0.8s;
+}
+
+.grid22 {
+    grid-column: 10 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 0 0 10vw 0;
+    animation: color 8s infinite;
+    animation-delay: 1.0s;
+}
+
+.grid23 {
+    grid-column: 11 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 0 0 0 10vw;
+    animation: flipX 8s infinite;
+    animation-delay: 1.2s;
+    transform-origin: center center;
+}
+
+.grid24 {
+    grid-column: 12 / span 1;
+    grid-row: 2 / span 1;
+    border-radius: 0 0 10vw 0;
+    animation: color 8s infinite;
+    animation-delay: 1.2s;
+}
+
+@keyframes flipX {
+    0% {
+        transform: scaleX(1);
+        background-color: #f5f5f5;
+    }
+
+    30% {
+        transform: scaleX(1);
+        background-color: #f5f5f5;
+    }
+
+    50% {
+        transform: scaleX(-1);
+        background-color: #000;
+    }
+
+    70% {
+        transform: scaleX(-1);
+        background-color: #000;
+    }
+
+    100% {
+        transform: scaleX(1);
+        background-color: #f5f5f5;
+
+    }
+}
+
+@keyframes color {
+    0% {
+        background-color: #f5f5f5;
+    }
+
+    30% {
+        background-color: #f5f5f5;
+    }
+
+    50% {
+        background-color: #000;
+    }
+
+    70% {
+        background-color: #000;
+    }
+
+    100% {
+        background-color: #f5f5f5;
+    }
+}
