@@ -1,8 +1,8 @@
-@font-face {
+/* @font-face {
     font-family: 'BookkMyungjo-Bd';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
     font-display: swap;
-  }
+  } */
 .book-modal-content {
     width: 25vw;
     height: 37vw;
@@ -29,7 +29,7 @@
 
 .modal-content.book-modal-content .book-sentence{
     white-space: pre-line;
-    font-family: 'BookkMyungjo-Bd', serif;
+    font-family: serif;
     font-size: 0.75vw;
     line-height: 1.3vw;
     color: #000;
