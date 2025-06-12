@@ -114,8 +114,8 @@ const MyUpload = () => {
                                             
                                             {item.content && (
                                                 <p className="content-description">
-                                                    {item.content.length > 100 
-                                                        ? `${item.content.substring(0, 100)}...` 
+                                                    {item.content.length > 10000
+                                                        ? `${item.content.substring(0, 10000)}...` 
                                                         : item.content
                                                     }
                                                 </p>
