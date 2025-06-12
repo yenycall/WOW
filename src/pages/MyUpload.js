@@ -12,7 +12,7 @@ const MyUpload = () => {
             const content = JSON.parse(localStorage.getItem('userContent')) || [];
             setUserContent(content);
         } catch (error) {
-            console.error('사용자 컨텐츠 로드 실패:', error);
+            console.error('컨텐츠 업로드 실패:', error);
             setUserContent([]);
         }
     };

@@ -1,8 +1,5 @@
-/* @font-face {
-    font-family: 'BookkMyungjo-Bd';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
-    font-display: swap;
-  } */
+@import url('//fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+
 .book-modal-content {
     width: 25vw;
     height: 37vw;
@@ -29,7 +26,7 @@
 
 .modal-content.book-modal-content .book-sentence{
     white-space: pre-line;
-    font-family: serif;
+    font-family: 'jejumyeongjo', serif;
     font-size: 0.75vw;
     line-height: 1.3vw;
     color: #000;
